@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>المنتجات</h2>
+  <ul>
+    <li *ngFor="let product of products">
+      <a href="#" (click)="viewProductDetail(product.id)">
+        {{ product.name }} - {{ product.price }} ريال
+      </a>
+    </li>
+  </ul>
+  <button (click)="router.navigate(['/add-product'])">إضافة منتج جديد</button>
+</div>

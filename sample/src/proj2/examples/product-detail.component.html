@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>تفاصيل المنتج</h2>
+  <div *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <p><strong>الوصف:</strong> {{ product.description }}</p>
+    <p><strong>السعر:</strong> {{ product.price }} ريال</p>
+  </div>
+</div>
